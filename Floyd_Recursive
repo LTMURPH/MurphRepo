@@ -1,0 +1,40 @@
+import sys
+import itertools
+sys.setrecursionlimit(100) 
+n = 4
+INF = float(9999)
+
+#graph of distances
+
+graph = [[0, 4, INF, 7],
+         [INF,0,3,INF ],
+         [INF,INF,0,6],
+         [7,INF,INF,0]]
+
+# i = source vertex
+# j = destination vertex
+# k = intermediate vertex
+# graph = distance matrix
+
+def shortest_path(i,j,k,dist):
+    if i == j:
+        return 0 
+#if not zero then we find the minimum distance between the points from the 3 possible routes of our matrix
+    else:
+        dist[i][j] = min(shortest_path(i,j,k-1,dist), (shortest_path (i,k,k-1,dist))+(shortest_path(k,j,k-1,dist)))
+    
+    print(dist[i][j])
+
+#Now store the shortest path produced by the function, based on the graph given.    
+'''Shortest_path_matrix = 
+
+
+
+            shortest_path(0,3,3,graph)
+
+print("Following matrix shows the shortest distances between every pair of vertices: ") 
+for _ in :
+       print(" ".join(map(str, _)))
+'''
+
+shortest_path(0,3,3, graph)
