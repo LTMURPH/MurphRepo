@@ -5,7 +5,8 @@
 The aim of this notebook is to explain the differences between implementations of the Floyd-Warshall Shortest Path Algorithm. It aims to do this in a step by step approach where the code is evident to the reader. The code is in Jupyter notebooks.
 
 ### Structure
-The notepad is accompanied by a report. For ease of understanding the code and the report the code is split up into lettered sections, A.B. etc. This allows the report to speak freely about what is happening in specific parts of the code. 
+In the notebook file there are two implementations, an older version without tests and then an up to date version including tests called Floyd_Warshall_Recursive_Method_Assessment.ipynb. This notepad is accompanied by a report. For ease of understanding the code and the report the code is split up into lettered sections, A.B. etc. This allows the report to speak freely about what is happening in specific parts of the code. 
+
 
 ### Dependencies 
 - import sys
